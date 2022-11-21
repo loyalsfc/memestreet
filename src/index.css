@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply my-6 md:my-0 mx-9 md:mx-4 lg:mx-9 md:first:ml-0 w-fit last:mr-0 rounded-full bg-main-color text-[#121212] px-8 md:px-6 lg:px-8 py-3 hover:opacity-75 font-bold
+  }
+}
+
 :root {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -30,9 +36,23 @@
 }
 
 .bg-social{
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   background-blend-mode: overlay;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 12px;
+}
+
+.scrollhide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollhide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.bg-linear{
+  background: linear-gradient(180deg, rgba(255, 180, 0, 0.63) 0%, rgba(255, 180, 0, 0) 100%);
 }
