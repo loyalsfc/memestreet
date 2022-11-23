@@ -20,21 +20,21 @@ function Home() {
           <div className='absolute bg-main-color/[0.4] h-[154px] w-[330px] rounded-full blur-[100px] -right-[215px] -top-[77px]'></div>
             <div className="container mx-auto flex items-center flex-col-reverse md:flex-row pt-11">
               <div>
-                <h5 className='text-lg font-semibold'>The Meme</h5>
-                <h1 className='font-bold text-3xl sm:text-[4rem]  text-main-color leading-[120%]'>Meme Street</h1>
-                <p>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
-                <p className='mb-4'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
+                <h5 data-aos="fade-up" className='text-lg font-semibold'>The Meme</h5>
+                <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[4rem]  text-main-color leading-[120%]'>Meme Street</h1>
+                <p data-aos="fade">Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
+                <p data-aos="fade-up" className='mb-4'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
                 <Buttons text='Buy Now'/>
                 <Buttons text='Poocoin'/>
                 <Buttons text='Audit'/>
                 <Buttons text='KYC'/>
               </div>
-              <img src={hero} className="md:w-1/2 mb-8 md:mb-0"/>
+              <img src={hero} data-aos="slide-up" data-aos-duration="1000" className="md:w-1/2 mb-8 md:mb-0"/>
               <div className='absolute bg-main-color h-[154px] w-[330px] rounded-full blur-[100px] -left-[215px] -bottom-[77px]'></div>
             </div>
           </section>
           <section>
-            <div className="container mx-auto flex py-[56px] px-2 md:justify-center overflow-x-scroll scrollhide">
+            <div data-aos="flip-left" className="container mx-auto flex py-[56px] px-2 md:justify-center overflow-x-scroll scrollhide">
               <Socials />
             </div>
           </section>
@@ -67,7 +67,7 @@ function Home() {
           </main>
           <section id='utility' className='bg-gradient-to-b from-main-color to-main-color[0] px-2 md:px-0'>
             <div className="container mx-auto pt-16">
-              <h2 className='text-center font-bold text-4xl md:text-[50px] mt-12 mb-9'>WHY MEME STREET</h2>
+              <h2 data-aos="flip-up" className='text-center font-bold text-4xl md:text-[50px] mt-12 mb-9'>WHY MEME STREET</h2>
               <div className='grid md:grid-cols-3 gap-4'>
                 <Utilities 
                   title="A better internet starts with better privacy." 
@@ -90,7 +90,7 @@ function Home() {
           <section id='tokenomics' className='relative'>
             <div className="container text-main-color mx-auto py-[100px] md:py-[200px] px-2">
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
-              <h2 className='text-center font-bold text-4xl mb-[56px] md:text-[50px]'>Tokenomics</h2>
+              <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px]'>Tokenomics</h2>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center z-10'>
                 <Tokenomics 
                   title="TOTAL SUPPLY" 
@@ -105,9 +105,9 @@ function Home() {
           </section>
           <section className='relative mb-[100px] md:mb-[200px] relative'>
             <div className="container mx-auto px-2">
-              <h2 className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:3%</h2>
+              <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:3%</h2>
               <div className='flex z-10'>
-                <div className='bg-[#2E2E2E] rounded-[2.5rem] w-full md:w-1/2 py-9 px-8'>
+                <div data-aos="fade-out" className='bg-[#2E2E2E] rounded-[2.5rem] w-full md:w-1/2 py-9 px-8'>
                   <Taxes 
                     title="Marketing"
                   />
@@ -125,8 +125,8 @@ function Home() {
             </div>
           </section>
           <section className='relative px-2' id='roadmap'>
-            <div className="container mx-auto">
-              <h2 className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>ROADMAP</h2>
+            <div data-aos="fade" className="container mx-auto">
+              <h2 data-aos="zoom-in" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>ROADMAP</h2>
               <div className="tokenomics-wrapper bg-[#2E2E2E]">
                 <h5 className='tokenomics-title text-main-color'>STAGE 1</h5>
                 <ul className='tokenomics-list'>
