@@ -7,7 +7,7 @@ function About({title, content, img, direction, margin}) {
 
   return (
     <div className={'flex items-center mb-16 ' + direction}>
-        <div className={'w-full md:h-[368px] md:w-[409px] ' + margin}>
+        <div className={'w-full md:h-[368px] md:w-[409px] md:w-1/2 ' + margin}>
             <img src={img} alt="" className='block mx-auto mb-4 md:mb-0'/>
         </div>
         <div className='md:w-1/2'>

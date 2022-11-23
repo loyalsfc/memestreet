@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.svg'
 import Navigation from './Navigation'
 
 function Header() {
@@ -17,7 +17,7 @@ function Header() {
                   <Navigation />
               </nav>
           </div>
-          <img src={logo} alt="logo" className='h-[66px] w-[73px] md:h-[88px] md:w-[98px]'/>
+          <img src={logo} alt="logo" className='h-[68px] w-[184px] md:h-[88px] md:w-[98px]'/>
           <nav className='hidden md:block'>
               <Navigation dnone='md:inline-block' />
           </nav>
