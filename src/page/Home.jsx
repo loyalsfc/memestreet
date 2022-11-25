@@ -11,19 +11,21 @@ import Tokenomics from './Tokenomics'
 import Taxes from './Taxes'
 import Footer from '../components/Footer'
 import Socials from './Socials'
+import myvid from '../assets/vid.mp4'
 
 function Home() {
   return (
     <div>
           <Header />
-          <section className='hero bg-white/[0.05] relative px-2 md:px-0'>
+          <section className='hero bg-white/[0.05] relative px-2 overflow-hidden md:px-0'>
+          <video src={myvid} loop autoPlay muted className='h-full hidden md:block object-cover md:w-full absolute inset-1/2 '></video>
           <div className='absolute bg-main-color/[0.4] h-[154px] w-[330px] rounded-full blur-[100px] -right-[215px] -top-[77px]'></div>
-            <div className="container mx-auto flex items-center flex-col-reverse md:flex-row pt-11">
+            <div className="container z-10  mx-auto flex items-center flex-col-reverse md:flex-row pt-11">
               <div>
-                <h5 data-aos="fade-up" className='text-lg font-semibold'>The Meme</h5>
-                <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[4rem]  text-main-color leading-[120%]'>Meme Street</h1>
-                <p data-aos="fade">Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
-                <p data-aos="fade-up" className='mb-4'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
+                <h5 data-aos="zoom-up" className='text-lg font-semibold'>The Meme</h5>
+                <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[5rem]  text-main-color leading-[150%]'>Meme Street</h1>
+                <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
+                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
                 <Buttons text='Buy Now'/>
                 <Buttons text='Poocoin'/>
                 <Buttons text='Audit'/>
@@ -98,33 +100,33 @@ function Home() {
                 />
                 <Tokenomics 
                   title="CONTRACT ADDRESS" 
-                  content="0xa3c5566eb6524384b3d24dae8640e59b99515d5d" 
+                  content="0xb7f0f8fe4eddc86a1f650c024db58b3f8ccd3076" 
                 />
               </div>
             </div>
           </section>
-          <section className='relative mb-[100px] md:mb-[200px] relative'>
+          <section className='relative py-[100px] md:mb-[200px] bg-bg-image2'>
             <div className="container mx-auto px-2">
-              <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:3%</h2>
-              <div className='flex z-10'>
+              <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:5%</h2>
+              <div className='flex items-center justify-center z-10'>
                 <div data-aos="fade-out" className='bg-[#2E2E2E] rounded-[2.5rem] w-full md:w-1/2 py-9 px-8'>
-                  <Taxes 
+                  <Taxes
+                    percent={'2'}
                     title="Marketing"
                   />
                   <Taxes 
+                    percent={'2'}
                     title="Buyback and Burn"
                   />
                   <Taxes 
+                    percent={'1'}
                     title="Development"
                   />
-                </div>
-                <div className='w-1/2 hidden md:block'>
-                  <img src={hero} alt="" className='h-[226px] mx-auto'/>
                 </div>
               </div>
             </div>
           </section>
-          <section className='relative px-2' id='roadmap'>
+          <section className='relative px-2 ' id='roadmap'>
             <div data-aos="fade" className="container mx-auto">
               <h2 data-aos="zoom-in" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>ROADMAP</h2>
               <div className="tokenomics-wrapper bg-[#2E2E2E]">

@@ -9,6 +9,9 @@ module.exports = {
       colors:{
         'primary-dark': '#121212',
         'main-color': '#309F2A',
+      },
+      backgroundImage:{
+        'bg-image': 'url("./assets/section.png")'
       }
     },
   },

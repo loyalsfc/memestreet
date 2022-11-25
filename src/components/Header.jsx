@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className='px-2 relative z-10'>
       <div className="container mx-auto flex justify-between items-center">
-          <div className='menu h-screen w-full bg-primary-dark fixed z-10 top-0 left-0 md:hidden hidden'>
+          <div data-aos="slide-left" data-aos-once="false" className='menu h-screen w-full bg-primary-dark fixed z-10 top-0 left-0 md:hidden hidden'>
               <i className="fa-solid fa-xmark absolute top-4 right-4 text-2xl" onClick={showMenu}></i>
               <nav>
                   <Navigation />

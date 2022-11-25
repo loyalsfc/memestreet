@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(()=>{
-    AOS.init({once: false, duration: 800});
+    AOS.init({once: true, duration: 800});
   }, [])
   return (
     <div className="overflow-x-hidden">
