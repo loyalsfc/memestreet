@@ -4,7 +4,6 @@ import About from './About.jsx'
 
 import hero from '../assets/image.png'
 import image from '../assets/image4.png'
-import wolf from '../assets/image3.png'
 import Buttons from './Buttons'
 import Utilities from './Utilities'
 import Tokenomics from './Tokenomics'
@@ -19,19 +18,19 @@ function Home() {
           <Header />
           <section className='hero bg-white/[0.05] relative px-2 overflow-hidden md:px-0'>
           <video src={myvid} loop autoPlay muted className='h-full hidden md:block object-cover md:w-full absolute inset-1/2 '></video>
-          <div className='absolute bg-main-color/[0.4] h-[154px] w-[330px] rounded-full blur-[100px] -right-[215px] -top-[77px]'></div>
-            <div className="container z-10  mx-auto flex items-center flex-col-reverse md:flex-row pt-11">
-              <div>
+          <div className='absolute md:bg-main-color/[0.4] h-[154px] w-[330px] rounded-full blur-[100px] -right-[215px] -top-[77px]'></div>
+            <div className=" z-10 mx-auto relative">
+              <div className='text-center pt-11 bg-black/[0.53] z-20  top-0 left-0'>
                 <h5 data-aos="zoom-up" className='text-lg font-semibold'>The Meme</h5>
                 <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[3rem] lg:text-[5rem]  text-main-color leading-[150%]'>Meme Street</h1>
-                <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] text-[1.2rem] lg:text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
-                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] text-[1rem] lg:text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
-                <Buttons text='Buy Now'/>
-                <Buttons text='Poocoin'/>
-                {/* <Buttons text='Audit'/>
-                <Buttons text='KYC'/> */}
+                <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] my-4 mx-auto text-[1.2rem] lg:text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
+                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] mx-auto text-[1rem] lg:text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
+                <div className='pb-11'>
+                  <Buttons text='Buy Now'/>
+                  <Buttons text='Uniswap'/>
+                  <Buttons text='Chart'/>
+                </div>
               </div>
-              <img src={hero}  data-aos-duration="1000" className="-scale-x-100 md:scale-x-100 md:w-1/2 mb-8 md:mb-0"/>
               <div className='absolute bg-main-color h-[154px] w-[330px] rounded-full blur-[100px] -left-[215px] -bottom-[77px]'></div>
             </div>
           </section>
@@ -67,7 +66,7 @@ function Home() {
             </div>
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -left-[341px] -bottom-[100px]'></div>
           </main>
-          <section id='utility' className='bg-gradient-to-b from-main-color to-main-color[0] px-2 md:px-0'>
+          <section id='utility' className='bg-gradient-to-b from-main-color mb-[100px] to-main-color[0] px-2 md:px-0'>
             <div className="container mx-auto pt-16">
               <h2 data-aos="flip-up" className='text-center font-bold text-4xl md:text-[50px] mt-12 mb-9'>WHY MEME STREET</h2>
               <div className='grid md:grid-cols-3 gap-4'>
@@ -89,10 +88,10 @@ function Home() {
               </div>
             </div>
           </section>
-          <section id='tokenomics' className='relative'>
-            <div className="container text-main-color mx-auto py-[100px] md:py-[200px] px-2">
+          <section id='tokenomics' className='relative bg-bg-image2 mb-[100px]'>
+            <div className="container text-main-color mx-auto py-[100px] md:pb-[200px] px-2">
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
-              <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px]'>Tokenomics</h2>
+              <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px] text-white'>Tokenomics</h2>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center z-10'>
                 <Tokenomics 
                   title="TOTAL SUPPLY" 
@@ -103,9 +102,16 @@ function Home() {
                   content="0xb7f0f8fe4eddc86a1f650c024db58b3f8ccd3076" 
                 />
               </div>
+              <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-white mt-12'>Tax</h2>
+              <div className='flex item-center justify-center text-center'>
+                <Tokenomics 
+                  title="Buy/Sell Tax" 
+                  content="5%" 
+                />
+              </div>
             </div>
           </section>
-          <section className='relative py-[100px] md:mb-[200px] bg-bg-image2'>
+          {/* <section className='relative py-[100px] md:mb-[200px] bg-bg-image2'>
             <div className="container mx-auto px-2">
               <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:5%</h2>
               <div className='flex items-center justify-center z-10'>
@@ -125,7 +131,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <section className='relative px-2 ' id='roadmap'>
             <div data-aos="fade" className="container mx-auto">
               <h2 data-aos="zoom-in" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>ROADMAP</h2>
