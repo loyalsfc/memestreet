@@ -48,7 +48,7 @@ function HowToThird() {
     return (
           <div className='bg-white text-black h-[550px] px-8 pt-8 rounded-3xl flex items-center overflow-y-hidden'>
               <div className='w-1/2 mr-10 hidden md:block p-16'>
-                  <img src={image} alt="img" className=' border border-cyan-100'/>
+                  <img src={image} alt="img" className=' border'/>
               </div>
               <div className='w-full md:w-1/2 shrink-0'>
                   <h4 className='text-4xl font-semibold text-main-color mb-8'>Step 3 - SWAP to $MS</h4>
