@@ -6,13 +6,10 @@ function About({title, content, img, direction, margin}) {
   }
 
   return (
-    <div className={'flex items-center mb-16 ' + direction}>
-        <div data-aos="fade" className={'w-full md:h-[368px] md:w-[409px] md:w-1/2 ' + margin}>
-            <img src={img} alt="" className='block mx-auto h-[375px] mb-4 md:mb-0'/>
-        </div>
-        <div className='md:w-1/2'>
-            <h3 data-aos="slide-up" className='text-main-color font-bold text-4xl md:text-[50px] mb-5'>{title}</h3>
-            <p data-aos="slide-down" className='text-xl'>{content}</p>
+    <div className={'items-center mb-16 bg-[#262626]/[0.8] border border-[#262626] p-8  lg:p-16 backdrop-blur rounded-[3rem] z-10'}>
+        <div className=''>
+            <h3 data-aos="slide-up" className='text-main-color font-bold text-4xl  mb-5'>{title}</h3>
+            <p data-aos="slide-down" className='text-lg'>{content}</p>
         </div>
     </div>
   )

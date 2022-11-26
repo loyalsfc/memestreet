@@ -50,30 +50,21 @@ function Home() {
               <Socials />
             </div>
           </section>
-          <main id='about' className='relative px-2 md:px-0'>
+          <main id='about' className='relative px-2 pt-[100px] md:px-0'>
             <div className='bg-main-color h-[682px] w-[682px] hidden md:block rounded-full absolute blur-[400px] -right-[341px] -top-[100px]'></div>
             <div className="container mx-auto pb-[100px] md:pb-[200px] z-50">
-              <About 
-                title="ABOUT" 
-                content="Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain. Let's create a community driven meme token that aim to build a strong, caring, and cooperative community of holders. Let’s become higher, faster, and stronger together." 
-                img={image} 
-                direction = "flex-col md:flex-row"
-                margin = 'md:mr-auto'
-              />
-              <About 
-                title="VISION" 
-                content="Meme Street offers a blockchain with all the same features AND with customizable privacy at your fingertips. It provides a unique and very safe way to protect data. We will combine the MEME trend with realistic token economics, which is something more than you can ever imagine. For us, community is extremely significant." 
-                img={hero} 
-                direction = 'flex-col md:flex-row-reverse'
-                margin='ml-auto'
-              />
-              <About 
-                title="MISSION" 
-                content="Blockchains expose data to everyone with an internet, Meme Street is on a mission to fix this by giving everyone the freedom to choose what they share. It’s built on the Binance smart chain and will give you the best experience that you can ever have in the crypto world. Simply join the pack, enjoy the ride, watch your Street Meme value grow, and earn money." 
-                img={image} 
-                direction = "flex-col md:flex-row"
-                margin = 'md:mr-auto'
-              />
+              <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-10 md:text-[50px] text-main-color'>ABOUT</h2>
+              <p className='text-xl'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain. Let's create a community driven meme token that aim to build a strong, caring, and cooperative community of holders. Let’s become higher, faster, and stronger together.</p>
+              <article className='mt-10 flex flex-col md:flex-row gap-4 md:gap-8'>
+                <About 
+                  title="VISION" 
+                  content="Meme Street offers a blockchain with all the same features AND with customizable privacy at your fingertips. It provides a unique and very safe way to protect data. We will combine the MEME trend with realistic token economics, which is something more than you can ever imagine. For us, community is extremely significant." 
+                />
+                <About 
+                  title="MISSION" 
+                  content="Blockchains expose data to everyone with an internet, Meme Street is on a mission to fix this by giving everyone the freedom to choose what they share. It’s built on the Binance smart chain and will give you the best experience that you can ever have in the crypto world. Simply join the pack, enjoy the ride, watch your Street Meme value grow, and earn money." 
+                />
+              </article>
             </div>
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -left-[341px] -bottom-[100px]'></div>
           </main>
