@@ -1,7 +1,7 @@
 import React from 'react'
 import step from '../assets/step1.png'
 import anim from '../assets/anim.gif'
-import image from '../assets/image4.png'
+import image from '../assets/image3.png'
 
 function HowTo() {
   return (
@@ -47,8 +47,8 @@ function HowToSecond() {
 function HowToThird() {
     return (
           <div className='bg-white text-black h-[550px] px-8 pt-8 rounded-3xl flex items-center overflow-y-hidden'>
-              <div className='w-1/2 mr-10 hidden md:block'>
-                  <img src={image} alt="img" className=''/>
+              <div className='w-1/2 mr-10 hidden md:block p-16'>
+                  <img src={image} alt="img" className=' border border-cyan-100'/>
               </div>
               <div className='w-full md:w-1/2 shrink-0'>
                   <h4 className='text-4xl font-semibold text-main-color mb-8'>Step 3 - SWAP to $MS</h4>

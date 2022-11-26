@@ -54,7 +54,7 @@ function Home() {
             <div className='bg-main-color h-[682px] w-[682px] hidden md:block rounded-full absolute blur-[400px] -right-[341px] -top-[100px]'></div>
             <div className="container mx-auto pb-[100px] md:pb-[200px] z-50">
               <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-10 md:text-[50px] text-main-color'>ABOUT</h2>
-              <p className='text-xl'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain. Let's create a community driven meme token that aim to build a strong, caring, and cooperative community of holders. Let’s become higher, faster, and stronger together.</p>
+              <p className='text-xl text-center'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain. Let's create a community driven meme token that aim to build a strong, caring, and cooperative community of holders. Let’s become higher, faster, and stronger together.</p>
               <article className='mt-10 flex flex-col md:flex-row gap-4 md:gap-8'>
                 <About 
                   title="VISION" 
@@ -71,7 +71,7 @@ function Home() {
           <section id='utility' className='bg-gradient-to-b from-main-color mb-[100px] to-main-color[0] px-2 md:px-0'>
             <div className="container mx-auto pt-16">
               <h2 data-aos="flip-up" className='text-center font-bold text-4xl md:text-[50px] mt-12 mb-9'>WHY MEME STREET</h2>
-              <div className='flex flex-wrap gap-4'>
+              <div className='flex flex-wrap justify-center gap-4'>
                 <Utilities 
                   title="A better internet starts with better privacy." 
                   content='Our mission is to fix this by giving everyone the freedom to choose what they share. Imagine a blockchain with all the same features AND with customizable privacy at your fingertips.'
