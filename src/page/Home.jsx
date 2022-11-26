@@ -11,8 +11,19 @@ import Taxes from './Taxes'
 import Footer from '../components/Footer'
 import Socials from './Socials'
 import myvid from '../assets/vid.mp4'
+import HowToBuy from '../components/HowToBuy'
 
 function Home() {
+
+  function copyToClipboard(e){
+    let text = document.querySelector('#contractAdd').textContent
+    navigator.clipboard.writeText(text)
+    e.target.innerHTML = 'Copied!';
+    setTimeout(() => {
+      e.target.innerHTML = 'Copy <i className="fa-solid fa-caret-right">';
+    }, 3000);
+  }
+
   return (
     <div>
           <Header />
@@ -69,7 +80,7 @@ function Home() {
           <section id='utility' className='bg-gradient-to-b from-main-color mb-[100px] to-main-color[0] px-2 md:px-0'>
             <div className="container mx-auto pt-16">
               <h2 data-aos="flip-up" className='text-center font-bold text-4xl md:text-[50px] mt-12 mb-9'>WHY MEME STREET</h2>
-              <div className='grid md:grid-cols-3 gap-4'>
+              <div className='flex flex-wrap gap-4'>
                 <Utilities 
                   title="A better internet starts with better privacy." 
                   content='Our mission is to fix this by giving everyone the freedom to choose what they share. Imagine a blockchain with all the same features AND with customizable privacy at your fingertips.'
@@ -91,16 +102,32 @@ function Home() {
           <section id='tokenomics' className='relative bg-bg-image2 mb-[100px]'>
             <div className="container text-main-color mx-auto py-[100px] md:pb-[200px] px-2">
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
-              <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px] text-white'>Tokenomics</h2>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center z-10'>
-                <Tokenomics 
+              {/* <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px] text-white'>Tokenomics</h2> */}
+              <div className='grid grid-cols-1 md:grid-cols-2 text-white/[0.7] max-w-[800px] mx-auto gap-4 z-10 bg-white/[0.1] backdrop-blur border border-white/[0.3] p-8 md: py-16 px-8 overflow-hidden rounded-[3rem]'>
+                <div class="flex flex-col">
+                  <h1 class="font-bold text-4xl mb-8 md:text-[50px] text-white">Tokenomics</h1>
+                  <h1 class="mt-auto">Buy $MS</h1>
+                  <div class="hero-card_text">Recovering losses from rugpulls <br/>one $MS at a time!</div>
+                </div>
+                <article>
+                  <div className=' relative mb-16'>
+                    <p className='  break-normal border border-white/[0.3] py-3 px-5 overflow-hidden' id='contractAdd'>0xb7f0f8fe4eddc86a1f650c024db58b3f8ccd3076</p>
+                    <button onClick={copyToClipboard} className='absolute right-0 top-0 px-5 h-full bg-white/[0.3] '>Copy <i className="fa-solid fa-caret-right"></i></button>
+                  </div>
+                  <div className='mt-auto text-white'>
+                    <h5 className='mb-4'>Total Supply</h5>
+                    <p className='text-xl font-medium'>$MS</p>
+                    <p className='text-xl font-medium'>1,000,000,000</p>
+                  </div>
+                </article>
+                {/* <Tokenomics 
                   title="TOTAL SUPPLY" 
                   content="1,000,000,000" 
                 />
                 <Tokenomics 
                   title="CONTRACT ADDRESS" 
                   content="0xb7f0f8fe4eddc86a1f650c024db58b3f8ccd3076" 
-                />
+                /> */}
               </div>
               <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-white mt-12'>Tax</h2>
               <div className='flex item-center justify-center text-center'>
@@ -190,6 +217,7 @@ function Home() {
             </div>
             <div className='absolute bg-main-color/[0.49] h-[682px] w-[682px] rounded-full blur-[400px] -right-[215px] -bottom-[77px]'></div>
           </section>
+          <HowToBuy />
           <Footer/>
     </div>
   )
