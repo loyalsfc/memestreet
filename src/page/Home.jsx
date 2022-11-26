@@ -23,20 +23,20 @@ function Home() {
             <div className="container z-10  mx-auto flex items-center flex-col-reverse md:flex-row pt-11">
               <div>
                 <h5 data-aos="zoom-up" className='text-lg font-semibold'>The Meme</h5>
-                <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[5rem]  text-main-color leading-[150%]'>Meme Street</h1>
-                <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
-                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
+                <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[3rem] lg:text-[5rem]  text-main-color leading-[150%]'>Meme Street</h1>
+                <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] text-[1.2rem] lg:text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
+                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] text-[1rem] lg:text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
                 <Buttons text='Buy Now'/>
                 <Buttons text='Poocoin'/>
-                <Buttons text='Audit'/>
-                <Buttons text='KYC'/>
+                {/* <Buttons text='Audit'/>
+                <Buttons text='KYC'/> */}
               </div>
-              <img src={hero} data-aos="slide-up" data-aos-duration="1000" className="md:w-1/2 mb-8 md:mb-0"/>
+              <img src={hero}  data-aos-duration="1000" className="-scale-x-100 md:scale-x-100 md:w-1/2 mb-8 md:mb-0"/>
               <div className='absolute bg-main-color h-[154px] w-[330px] rounded-full blur-[100px] -left-[215px] -bottom-[77px]'></div>
             </div>
           </section>
           <section>
-            <div data-aos="flip-left" className="container mx-auto flex py-[56px] px-2 md:justify-center overflow-x-scroll scrollhide">
+            <div data-aos="flip-left" className=" container mx-auto flex py-[56px] px-2 md:justify-center overflow-x-scroll scrollhide">
               <Socials />
             </div>
           </section>
