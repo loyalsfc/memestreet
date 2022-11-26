@@ -11,7 +11,6 @@ function Footer() {
             <nav className='mx-auto my-8 md:my-[54px] text-center -mt-10'><Navigation dnone='hidden' /></nav>   
             <div className='mx-auto flex flex-col md:flex-row justify-center'>
                 <button className='btn-primary'>Buy Now</button>
-                <button className='btn-primary'>Uniswap</button>
                 <button className='btn-primary'>Chart</button>
             </div>
             <div className='flex justify-evenly mx-auto my-8 md:my-[52px] w-3/4 md:w-1/3'><Socials hidden='hidden mx-4' /></div>

@@ -38,7 +38,6 @@ function Home() {
                 <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] mx-auto text-[1rem] lg:text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
                 <div className='pb-11'>
                   <Buttons text='Buy Now'/>
-                  <Buttons text='Uniswap'/>
                   <Buttons text='Chart'/>
                 </div>
               </div>
