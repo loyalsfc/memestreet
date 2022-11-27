@@ -35,8 +35,7 @@ function Home() {
                 <h5 data-aos="zoom-up" className='text-lg font-semibold'>The Meme</h5>
                 <h1 data-aos="flip-up" className='font-bold text-3xl sm:text-[3rem] lg:text-[5rem]  text-main-color leading-[150%]'>Meme Street</h1>
                 <p data-aos="zoom-in" className='leading-[150%] max-w-[700px] my-4 mx-auto text-[1.2rem] lg:text-[1.5rem]'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy.</p>
-                <p data-aos="zoom-in" className='mb-4 leading-[150%] max-w-[700px] mx-auto text-[1rem] lg:text-[1.5rem]'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
-                <div className='pb-11'>
+                <div className='pb-11 mt-12'>
                   <Buttons text='Buy Now'/>
                   <Buttons text='Chart'/>
                 </div>
@@ -53,7 +52,7 @@ function Home() {
             <div className='bg-main-color h-[682px] w-[682px] hidden md:block rounded-full absolute blur-[400px] -right-[341px] -top-[100px]'></div>
             <div className="container mx-auto pb-[100px] md:pb-[200px] z-50">
               <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-10 md:text-[50px] text-main-color'>ABOUT</h2>
-              <p className='text-xl text-center'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain. Let's create a community driven meme token that aim to build a strong, caring, and cooperative community of holders. Let’s become higher, faster, and stronger together.</p>
+              <p className='text-xl text-center'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
               <article className='mt-10 flex flex-col md:flex-row gap-4 md:gap-8'>
                 <About 
                   title="VISION" 
