@@ -52,15 +52,25 @@ function Home() {
             <div className='bg-main-color h-[682px] w-[682px] hidden md:block rounded-full absolute blur-[400px] -right-[341px] -top-[100px]'></div>
             <div className="container mx-auto pb-[100px] md:pb-[200px] z-50">
               <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-10 md:text-[50px] text-main-color'>ABOUT</h2>
-              <p className='text-xl text-center'>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. Meme Street has a token of same name launching on Ethereum Smart Chain.</p>
+              <article data-aos="zoom-in" className='text-center max-w-[700px] mx-auto text-lg'>
+                <p className=''>Meme Street is a 'Privacy Blockchain' born to implement one utmost needed feature to the Blockchain Technologies i.e. Privacy. </p>
+                <p className='my-4'>Meme Street has a token of same name launching on Ethereum Smart Chain.</p> 
+                <p>$MS aims to implement the freedom of sharing selectively within its own blockchain.</p>
+                <p className='my-4'>"You get to be yourself. </p>
+                <p>Create,Express,Share."</p>
+              </article>
               <article className='mt-10 flex flex-col md:flex-row gap-4 md:gap-8'>
                 <About 
                   title="VISION" 
-                  content="Meme Street offers a blockchain with all the same features AND with customizable privacy at your fingertips. It provides a unique and very safe way to protect data. We will combine the MEME trend with realistic token economics, which is something more than you can ever imagine. For us, community is extremely significant." 
+                  content="Meme Street offers a blockchain with all the same features AND with customizable privacy at your fingertips. It provides a unique and very safe way to protect data. 
+                  
+                  Our Vision consists of people creating,expressing and living memes freely inside a Blockchain without the fear of inappropriate audience." 
                 />
                 <About 
                   title="MISSION" 
-                  content="Blockchains expose data to everyone with an internet, Meme Street is on a mission to fix this by giving everyone the freedom to choose what they share. It’s built on the Binance smart chain and will give you the best experience that you can ever have in the crypto world. Simply join the pack, enjoy the ride, watch your Street Meme value grow, and earn money." 
+                  content="Blockchains expose data to everyone with an internet, Meme Street is on a mission to fix this by giving everyone the freedom to choose what they share.
+
+                  This helps in supporting our mission of widespread adoption of Decentralized Web." 
                 />
               </article>
             </div>
@@ -91,7 +101,6 @@ function Home() {
           <section id='tokenomics' className='relative bg-bg-image2 mb-[100px]'>
             <div className="container text-main-color mx-auto py-[100px] md:pb-[200px] px-2">
             <div className='bg-main-color h-[682px] w-[682px] rounded-full absolute blur-[400px] -right-[341px] -top-1/2'></div>
-              {/* <h2 data-aos="slide-up" className='text-center font-bold text-4xl mb-[56px] md:text-[50px] text-white'>Tokenomics</h2> */}
               <div className='grid grid-cols-1 md:grid-cols-2 text-white/[0.7] max-w-[800px] mx-auto gap-4 z-10 bg-white/[0.1] backdrop-blur border border-white/[0.3] p-8 md: py-16 px-8 overflow-hidden rounded-[3rem]'>
                 <div class="flex flex-col">
                   <h1 class="font-bold text-4xl mb-8 md:text-[50px] text-white">Tokenomics</h1>
@@ -109,14 +118,6 @@ function Home() {
                     <p className='text-xl font-medium'>1,000,000,000</p>
                   </div>
                 </article>
-                {/* <Tokenomics 
-                  title="TOTAL SUPPLY" 
-                  content="1,000,000,000" 
-                />
-                <Tokenomics 
-                  title="CONTRACT ADDRESS" 
-                  content="0xb7f0f8fe4eddc86a1f650c024db58b3f8ccd3076" 
-                /> */}
               </div>
               <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-white mt-12'>Tax</h2>
               <div className='flex item-center justify-center text-center'>
@@ -127,27 +128,7 @@ function Home() {
               </div>
             </div>
           </section>
-          {/* <section className='relative py-[100px] md:mb-[200px] bg-bg-image2'>
-            <div className="container mx-auto px-2">
-              <h2 data-aos="flip-up" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>TOTAL BUY/SELL TAX:5%</h2>
-              <div className='flex items-center justify-center z-10'>
-                <div data-aos="fade-out" className='bg-[#2E2E2E] rounded-[2.5rem] w-full md:w-1/2 py-9 px-8'>
-                  <Taxes
-                    percent={'2'}
-                    title="Marketing"
-                  />
-                  <Taxes 
-                    percent={'2'}
-                    title="Buyback and Burn"
-                  />
-                  <Taxes 
-                    percent={'1'}
-                    title="Development"
-                  />
-                </div>
-              </div>
-            </div>
-          </section> */}
+
           <section className='relative px-2 ' id='roadmap'>
             <div data-aos="fade" className="container mx-auto">
               <h2 data-aos="zoom-in" className='text-center font-bold text-3xl mb-[56px] md:text-[50px] text-main-color'>ROADMAP</h2>
@@ -199,7 +180,7 @@ function Home() {
                 <ul className='tokenomics-list'>
                   <li className='mr-4 max-w-[250px]'>Additional Partnerships and Sponsorships</li>
                   <li className='mr-4 max-w-[250px]'>Expand Social Followings</li>
-                  <li className='mr-4 max-w-[250px]'>Advertising Campaigns/ Ama</li>
+                  <li className='mr-4 max-w-[250px]'>Advertising Campaigns/ AMA</li>
                   <li className='mr-4 max-w-[250px]'>10,000 holders</li>
                 </ul>
               </div> 

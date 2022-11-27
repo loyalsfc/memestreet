@@ -53,7 +53,7 @@ function HowToThird() {
               <div className='w-full md:w-1/2 shrink-0'>
                   <h4 className='text-4xl font-semibold text-main-color mb-8'>Step 3 - SWAP to $MS</h4>
                   <ul className='text-lg '>
-                      <ul className='my-4'>Click on the gear in the top right of the Swap box, and set slippage to 13%.</ul>
+                      <ul className='my-4'>Click on the gear in the top right of the Swap box, and set the slippage.</ul>
                       <ul>Simply click swap, confirm on your wallet and you now have $MS</ul>
                   </ul>
                   <p className='text-lg mb-10 my-4'>Happy Holding!</p>
