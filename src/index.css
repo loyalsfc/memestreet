@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply my-6 md:my-0 mx-9 md:mx-4 lg:mx-9 md:first:ml-0 w-fit last:mr-0 rounded-full bg-main-color text-[#121212] px-8 md:px-6 lg:px-8 py-3 hover:opacity-75 font-bold
+  }
+  .tokenomics-wrapper {
+    @apply w-full rounded-[2.5rem] py-8 w-[782px] px-4 max-w-full mx-auto gap-8 mb-20 z-10 relative
+  }
+  .tokenomics-title{
+    @apply text-2xl font-bold text-center mb-5
+  }
+  .tokenomics-list{
+    @apply font-medium list-disc list-outside sm:columns-2 w-fit mx-auto
+  }
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.hero{
+  background-blend-mode: overlay;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+}
+
+.btn{
+  background: linear-gradient(155deg, rgb(48, 159, 42) , rgba(48, 159, 42,0.3));
+}
+
+.bg-social{
+  background: rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+}
+
+.scrollhide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollhide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.bg-linear{
+  background: linear-gradient(180deg, rgba(255, 180, 0, 0.63) 0%, rgba(255, 180, 0, 0) 100%);
+}
+
+video{
+  transform: translate(-50%, -50%);
+}
+
+.bg-bg-image2{
+  /* background:  rgba(255, 255, 255, 0.8), url('./assets/sectiom.jpg'); */
+  background-image: url("./assets/sectiom.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}

@@ -1,0 +1,26 @@
+#app { height: 100% }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#contractAdd{
+    background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-clip: text;
+    color: transparent;
+    background: -webkit-linear-gradient(60deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
