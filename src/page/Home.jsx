@@ -101,8 +101,8 @@ function Home() {
               <div className='grid grid-cols-1 md:grid-cols-2 text-white/[0.7] max-w-[800px] mx-auto gap-4 z-10 bg-white/[0.1] backdrop-blur border border-white/[0.3] p-8 md: py-16 px-8 overflow-hidden rounded-[3rem]'>
                 <div class="flex flex-col">
                   <h1 class="font-bold text-4xl mb-8 md:text-[50px] text-white">Tokenomics</h1>
-                  <h1 class="mt-auto">Buy $MS</h1>
-                  <div class="hero-card_text">Recovering losses from rugpulls <br/>one $MS at a time!</div>
+                  <h1 class="mt-auto"></h1>
+                  <div class="hero-card_text">A private internet <br/>for all!</div>
                 </div>
                 <article>
                   <div className=' relative mb-16'>
